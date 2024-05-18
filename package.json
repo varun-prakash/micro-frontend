@@ -1,0 +1,27 @@
+{
+  "name": "microfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "host",
+      "remote"
+    ]
+  },
+  "scripts": {
+    "start": "npx npm-run-all --parallel start:host start:remote",
+    "start:host": "cd ./host-app && npm start",
+    "start:remote": "cd ./clock-app && npm start",
+    "cleanup": "npx npm-run-all --parallel cleanup:host cleanup:remote",
+    "cleanup:host": "cd ./host && npm run cleanup",
+    "cleanup:remote": "cd ./remote && npm run cleanup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

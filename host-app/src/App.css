@@ -1,0 +1,35 @@
+=/* host-app/src/App.css */
+
+.app-container {
+  background: #2e2e2e; /* Dark grey background */
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #ffffff; /* Light text color for contrast */
+}
+
+.app-title {
+  color: #ff6347; /* A slightly lighter color for the title */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.remote-wrapper {
+  border: 1px solid #ff6347;
+  background: #3a3a3a; /* Slightly lighter grey for the wrapper */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-link {
+  color: #1e90ff; /* Bright blue link color for visibility */
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.app-link:hover {
+  text-decoration: underline;
+}
