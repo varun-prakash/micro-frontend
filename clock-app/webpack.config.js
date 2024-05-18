@@ -57,7 +57,7 @@ module.exports = {
       filename: "moduleEntry.js",
       exposes: {
         "./App": "./src/App",
-        "./Button": "./src/Button",
+        "./Clock": "./src/Clock",
       },
       shared: {
         ...dependencies,

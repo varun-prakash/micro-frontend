@@ -1,4 +1,3 @@
-//host-app/webpack.config.js
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const { dependencies } = require("./package.json");
@@ -39,6 +38,7 @@ module.exports = {
       name: "Host",
       remotes: {
         Remote: `Remote@http://localhost:4000/moduleEntry.js`,
+        RemoteCalendar: `RemoteCalendar@http://localhost:4001/moduleEntry.js`, // Correct name for the calendar app
       },
       shared: {
         ...dependencies,

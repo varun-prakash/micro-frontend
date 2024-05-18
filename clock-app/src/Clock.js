@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./Button.css"; // Import the CSS file
+import "./Clock.css"; // Import the CSS file
 
-const Button = () => {
+const Clock = () => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const Button = () => {
     return () => clearInterval(timerId);
   }, []);
 
-  const getRotationDegrees = (unit, max) => (unit / max) * 360;
+  const getRotationDegrees = (unit, max) => (unit / max) * 360 + 90;
 
   const hours = time.getHours() % 12;
   const minutes = time.getMinutes();
@@ -44,4 +44,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default Clock;

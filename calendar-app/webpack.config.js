@@ -52,7 +52,7 @@ module.exports = {
       manifest: "./public/manifest.json",
     }),
     new ModuleFederationPlugin({
-      name: "Remote",
+      name: "RemoteCalendar",
 
       filename: "moduleEntry.js",
       exposes: {
